@@ -1,0 +1,237 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/*global*/
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{  
+    margin: 0;
+    padding: 0;
+}
+.button-1{
+    cursor: pointer;
+    height: 34px;
+    background-color: rgb(255, 175, 0);
+    border: none;
+    padding: 0 20px;
+    color: #35424a;
+}
+.button-1:hover{
+    background-color: white;
+}
+
+/*header*/
+header{
+    background: #35424a;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(255, 175, 0) 3px solid;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 15px;
+}
+header .highlight, header .highlight a{
+    color:rgb(255, 175, 0);
+    font-weight: bold;
+}
+header a:hover{
+    color:#cccc;
+    font-weight: bold;
+}
+header a:active{
+    color: rgb(255, 175, 0);
+}
+
+
+/*showcase*/
+#showcase{
+    min-height: 400px;
+    background: url(images/ferrari.jpg) no-repeat ;
+    background-position: bottom;
+    text-align: center;
+    color: #f4f4f4;
+    
+}
+#showcase h1{
+    margin-top: 250px;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+#showcase p{
+    font-size: 20px;
+}
+
+
+/*newsletter*/
+#newsletter{
+    border-bottom: rgb(255, 175, 0) 3px solid;
+    border-top: rgb(255, 175, 0) 3px solid;
+    padding: 15px;
+    color: white;
+    background-color: #35424a;
+}
+#newsletter h1{
+    margin-left: 0;
+    float: left;
+}
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/*boxes*/
+#boxes{
+    margin-top: 10px;
+    color: #35424a;
+}
+#boxes .box{
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+#boxes .box img{
+    width: 56px;
+    height: 56px;
+}
+
+
+/*footer*/
+footer{
+    margin-top: 20px;
+    border-top: #35424a 4px solid;
+    padding: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(255, 175, 0);
+    color: #35424a;
+}
+
+/*about styling*/
+.drk{
+    background-color: #35424a;
+    color: white;
+    padding: 20px;
+}
+#sidebar .drk{
+    margin-top: 20px;
+    float:right;
+    width: 30%;
+    text-align: center;
+}
+article .left{
+    float: left;
+    width: 60%;
+    padding: 25px;
+}
+.left .drk{
+    margin-top: 10px;
+    padding: 20px;
+}
+.left h3{
+    padding: 0 20px;
+}
+.left p{
+    padding: 0 20px;
+}
+
+/*services styling*/
+#motherbox{
+    display: flex;
+}
+#service .container{
+    float: left;
+    width: 60%;
+}
+#service .box2{
+    padding: 20px;
+    border: #cccc 1px solid;
+    margin-top: 10px;
+}
+.container #form .drk{
+    float: right;
+    width: 30%;
+}
+.button-2{
+    margin-top: 10px;
+    cursor: pointer;
+    height: 25px;
+    background-color: rgb(255, 175, 0);
+    border: none;
+    padding: 0 20px;
+    color: #35424a;
+}
+.button-2:hover{
+    background-color: white;
+}
+#form .drk h3{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+#service h1{
+    padding-left: 20px;
+}
+
+/*media queries*/
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article.left,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width:100%
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #newsletter button{
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+
+}
